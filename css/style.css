@@ -1,0 +1,181 @@
+body {
+    background-color: #343E3D;
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+  p {
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 250;
+    font-size: small;
+  }
+  ul {
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 250;
+    font-size: small;
+  }
+  h1 {
+    color: #fff;
+  }
+  h2 {color: #fff;
+    font-size: medium;
+  }
+  h3 {color: #fff;
+    font-size: small;
+  }
+  .skillsHeader {
+    width: 100%;
+    text-align: center;
+  }
+  .mySkills {
+    background-color: #0D0D0D;
+    height: auto;
+    padding: 50px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+  }
+  
+  .skillsHeader {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top of the flex container */
+    margin-bottom: 20px;
+  }
+  
+  .skillContainer {
+    padding: 3%;
+    height: 100%; /* Each container occupies 100% of the row height */
+    width: 45%; /* Adjusted width to fit two containers in a row */
+    margin: 0 5px; /* Added margin for spacing between containers */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #607466;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skillContainer {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .row {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+  }
+  .workHeader {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .myWork {
+    background-color: #0D0D0D;
+    padding: 25px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .Image1,
+  .Image2,
+  .Image3 {
+    width: 100%;
+  }
+  
+  .content1,
+  .content2,
+  .content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    color: #fff;
+  }
+  
+  .content1 p,
+  .content2 p,
+  .content3 p {
+    margin-top: 10px;
+  }
+  button {
+    background-color: #607466;
+    border: none;
+    padding: 15px 32px;
+    display: inline-block;
+    -webkit-text-fill-color: #fff;
+    font-size: small;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .workGrid {
+      grid-template-columns: 1fr; /* Change to single column layout */
+    }
+    
+    .workHeader,
+    .Image1,
+    .content1,
+    .Image2,
+    .content2,
+    .Image3,
+    .content3 {
+      order: -1; /* Move content sections above images */
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .mySkills {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+    .workGrid {
+      grid-template-columns: repeat(2, 1fr); /* Adjusted grid layout for larger screens */
+      gap: 10px; /* Reduced gap between grid items */
+    }
+    
+    .Image1,
+    .content1,
+    .Image2,
+    .content2,
+    .Image3,
+    .content3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content vertically within their containers */
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 25px;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .Image1,
+    .Image2,
+    .Image3 img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
