@@ -25,6 +25,64 @@ body {
   h3 {color: #fff;
     font-size: small;
   }
+  .navigation {
+    background-color: #607466;
+    padding-left: 25px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 105px;
+  height: auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.heroimg {
+  background-color: #0D0D0D;
+  height: auto;
+  padding-top: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.image {
+  margin-left: 50px;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.heroimg h2,
+.heroimg h1,
+.heroimg p {
+  color: #fff;
+}
   .skillsHeader {
     width: 100%;
     text-align: center;
@@ -32,7 +90,7 @@ body {
   .mySkills {
     background-color: #0D0D0D;
     height: auto;
-    padding: 50px;
+    padding: 25px;
     padding-bottom: 25px;
     margin: 0 auto;
   }
@@ -44,15 +102,15 @@ body {
   .row {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top of the flex container */
+    align-items: flex-start;
     margin-bottom: 20px;
   }
   
   .skillContainer {
     padding: 3%;
-    height: 100%; /* Each container occupies 100% of the row height */
-    width: 45%; /* Adjusted width to fit two containers in a row */
-    margin: 0 5px; /* Added margin for spacing between containers */
+    height: 100%;
+    width: 45%;
+    margin: 0 5px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -129,7 +187,7 @@ body {
 
   @media screen and (max-width: 768px) {
     .workGrid {
-      grid-template-columns: 1fr; /* Change to single column layout */
+      grid-template-columns: 1fr;
     }
     
     .workHeader,
@@ -139,7 +197,7 @@ body {
     .content2,
     .Image3,
     .content3 {
-      order: -1; /* Move content sections above images */
+      order: -1;
       display: flex;
       justify-content: center;
       text-align: center;
@@ -151,8 +209,8 @@ body {
       padding-left: 100px;
     }
     .workGrid {
-      grid-template-columns: repeat(2, 1fr); /* Adjusted grid layout for larger screens */
-      gap: 10px; /* Reduced gap between grid items */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
     }
     
     .Image1,
@@ -163,7 +221,7 @@ body {
     .content3 {
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center content vertically within their containers */
+      align-items: center;
       text-align: center;
       max-width: 400px;
       margin: 0 auto;
@@ -178,4 +236,11 @@ body {
       height: auto;
     }
   }
-  
+    .footer {
+      background-color: #607466;
+      padding: 25px;
+      margin: 0% auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
